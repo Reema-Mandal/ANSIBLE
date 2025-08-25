@@ -1,0 +1,82 @@
+commands
+###############
+    1  ping 172.210.13.186
+    2  yum install ansible-core*
+    3  yum update -y
+    4  yum install pip -y
+    8  pip3 install ansible-core
+   10  ansible --version
+   11  mkdir /project-x
+   12  cd /project-x/
+   13  vim my-first-playbook.yaml
+   16  ansible-playbook my-first-playbook.yaml --syntax-check
+   29  ansible-playbook my-first-playbook.yaml
+   30  cd
+   31  ip a s
+   32  hostname
+   33  vim /etc/hosts
+   34  ping  10.0.0.8
+   35  mkdir /data
+   36  cd /data
+   37  ssh-keygen
+   38  cd
+   39  cd .ssh/
+   40  cat id_rsa.pub
+   41  ssh-copy-id root@10.0.0.8
+   42  ssh-copy-id root@10.0.0.9
+   43  cd
+   44  cd /etc/
+   45  ll
+   46  cd ansible
+   47  cd
+   48  pip install ansible-core
+   49  pip3 install ansible-core
+   50  cd
+   51  ansible --version
+   52  cd /etc/ansible
+   53  cd /etc
+   54  mkdir /ansible
+   55  cd /ansible
+   56  ll
+   57  cd
+   58  ssh root@10.0.0.8
+   59  ssh root@10.0.0.9
+   60  cd /project-x
+   61  ansible-playbook my-first-playbook.yaml
+   62  cd /etc
+   63  ll
+   64  cd ansible
+   65  yum install ansible-core
+   66  pip3 install ansible-core
+   67  cd ansible
+   68  pip install ansible-core
+   69  cd
+   70  pip3 install ansible-core
+   71  cd /etc/ansible
+   72  pwd
+   73  ls
+   74  cd /
+   75  cd etc
+   76  ls
+   77  mkdir ansible
+   78  ls
+   79  cd ansible/
+   80  ls
+   81  vim /etc/ansible/ansible.cfg
+   82  ll
+   83  cat hosts
+   84  vim hosts
+   85  rm -rf
+   86  cd
+   87  cd /etc
+   88  cd /ansible
+   89  vim hosts
+   90  cd
+   91  cd /etc
+   92  cd ansible/
+   93  ls
+   94  vim hosts
+   95  ansible all -m ping
+   96  cd
+   97  cd /project-x
+   98  ansible-playbook my-first-playbook.yaml 
