@@ -1398,6 +1398,33 @@ ansible [core 2.11.12]
 [root@VM1 ~]# mkdir /project-x
 [root@VM1 ~]# cd /project-x/
 [root@VM1 project-x]# vim my-first-playbook.yaml
+
+---
+- name: doing some task A
+  hosts: all
+  tasks:
+ 
+        - name: creating user jacksparrow
+          user:
+                  name: Riddhi-ma'am
+                  uid: 1200
+                  home: /Lti-mindtree
+                  shell: /bin/bash
+                  state: present
+ 
+        - name: installed apache on my remote servers
+          yum:
+                name: httpd
+                state: present
+        - name: started apache service
+          systemd:
+                  name: httpd
+                  state: started
+                  enabled: true
+ 
+...
+ 
+ 
 [root@VM1 project-x]# ansible-playbook my-first-playbook.yaml --syntax check
 [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 3.6.8 (default, Sep
 10 2021, 09:13:53) [GCC 8.5.0 20210514 (Red Hat 8.5.0-3)]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can
